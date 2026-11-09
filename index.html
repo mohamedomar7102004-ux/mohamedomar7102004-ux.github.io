@@ -2,62 +2,77 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <!-- WICHTIG für Handys: Sorgt dafür, dass die Skalierung auf dem Smartphone stimmt -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lokal AI - Startup Landing Page</title>
     
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             max-width: 800px;
             margin: 0 auto;
-            /* Passt den Abstand für kleine Handydisplays an */
-            padding: 10px; 
+            padding: 15px;
             line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
+            color: #c9d1d9;
+            background-color: #0d1117;
         }
         
         header {
             text-align: center;
-            padding: 20px 10px;
+            padding: 30px 10px;
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            margin-bottom: 20px;
         }
 
         h1 {
-            color: #0066cc;
-            font-size: 2rem;
+            color: #58a6ff;
+            font-size: 2.2rem;
             margin-bottom: 10px;
         }
 
         .box {
-            background: #ffffff;
-            padding: 20px;
-            margin: 15px 0;
+            background: #161b22;
+            border: 1px solid #30363d;
+            padding: 25px;
+            margin: 20px 0;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
         }
 
         h2 {
-            color: #222;
-            font-size: 1.4rem;
+            color: #58a6ff;
+            font-size: 1.5rem;
             margin-top: 0;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 8px;
+        }
+
+        p {
+            color: #8b949e;
+        }
+
+        strong {
+            color: #c9d1d9;
         }
 
         ul {
             padding-left: 20px;
+            color: #8b949e;
         }
 
         li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
 
-        /* Video passt sich automatisch an die Handybreite an */
+        /* Video Container für automatische Skalierung auf dem Handy */
         .video-container {
             position: relative;
             padding-bottom: 56.25%; /* 16:9 Format */
             height: 0;
             overflow: hidden;
             border-radius: 5px;
+            margin-top: 15px;
         }
 
         .video-container iframe {
@@ -71,36 +86,45 @@
 
         .cta-box {
             text-align: center;
-            background: #eef6ff;
-            border: 1px solid #b6d4fe;
+            background: #161b22;
+            border: 1px solid #1f6feb;
         }
 
-        /* Großer, klickbarer Button für den Daumen auf dem Handy */
+        /* Schöner, moderner Button in Blau/Grün für Touch und Desktop */
         .btn {
-            display: block; /* Macht den Button auf dem Handy schön breit zum Drauftippen */
+            display: block;
             width: 100%;
             box-sizing: border-box;
-            background: #28a745;
+            background: #238636;
             color: white;
             padding: 14px 0;
             text-align: center;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 6px;
             font-weight: bold;
             font-size: 1.1rem;
-            margin-top: 15px;
+            margin-top: 20px;
+            transition: background 0.2s;
         }
 
         .btn:hover {
-            background: #218838;
+            background: #2ea043;
         }
 
         footer {
             text-align: center;
-            margin-top: 30px;
-            color: #666;
+            margin-top: 40px;
+            color: #8b949e;
             font-size: 0.9rem;
-            padding: 10px;
+            padding: 20px;
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+        }
+
+        footer p {
+            margin: 5px 0;
+            color: #8b949e;
         }
     </style>
 </head>
@@ -108,44 +132,48 @@
 
     <!-- Header-Bereich -->
     <header>
-        <h1>Lokal AI 🚀</h1>
-        <p>Die smarte und datenschutzfreundliche KI-Lösung direkt auf deinem eigenen PC.</p>
+        <h1>Lokal AI</h1>
+        <p>Die zukunftsweisende Plattform für sichere, dezentrale und vollständig offline nutzbare Künstliche Intelligenz.</p>
     </header>
 
     <!-- Pitch Video Bereich -->
     <div class="box">
-        <h2>Unser Pitch-Video</h2>
-        <p>Erfahre in unserem kurzen Video, wie unsere Idee funktioniert:</p>
+        <h2>Offizieller Startup-Pitch: Die Vision von Lokal AI</h2>
+        <p>In unserem Video präsentieren wir Ihnen die Kernidee unseres Startups, die Problematik aktueller Cloud-Lösungen und wie wir Unternehmen und Privatanwender Unabhängigkeit zurückgeben.</p>
         <div class="video-container">
             <!-- Ersetze YOUR_VIDEO_ID durch deine echte YouTube-Video-ID -->
             <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
         </div>
     </div>
 
-    <!-- Geschäftsidee -->
+    <!-- Ausführliche Geschäftsidee -->
     <div class="box">
-        <h2>Die Geschäftsidee</h2>
-        <p>Mit <strong>Lokal AI</strong> ermöglichen wir es Unternehmen und Privatpersonen, modernste Künstliche Intelligenz lokal auf der eigenen Hardware zu nutzen. Sensible Daten verlassen somit niemals deinen Computer.</p>
+        <h2>Die Geschäftsidee & Unsere Mission</h2>
+        <p>Heutige KI-Anwendungen sind fast ausnahmslos an externe Cloud-Server von Grosskonzernen gebunden. Das führt zu massiven Problemen beim Datenschutz, hoher Latenz und ständigen monatlichen Abo-Kosten. Unternehmen dürfen sensible Kundendaten oder firmeninterne Dokumente oft gar nicht erst in die Cloud senden.</p>
+        <p><strong>Lokal AI</strong> schliesst diese Lücke. Wir bieten eine intuitive Infrastruktur, mit der modernste Sprachmodelle und KI-Agenten direkt auf der lokalen Hardware (Grafikkarten und Prozessoren der Nutzer) ausgeführt werden. Dadurch bleiben alle Daten zu 100 Prozent im eigenen System.</p>
         
-        <h3>Deine Vorteile:</h3>
+        <p style="margin-top: 20px;"><strong style="color: #58a6ff;">Ihre Kernvorteile im Überblick:</strong></p>
         <ul>
-            <li><strong>100% Datenschutz:</strong> Volle Kontrolle über deine Daten.</li>
-            <li><strong>Offline nutzbar:</strong> Keine Abhängigkeit von einer Internetverbindung.</li>
-            <li><strong>Keine Abo-Gebühren:</strong> Keine monatlichen Kosten für Cloud-Dienste.</li>
+            <li><strong>Absoluter Datenschutz:</strong> Keine Datenübertragung nach aussen, voller Schutz vor Datenlecks.</li>
+            <li><strong>Volle Offline-Fähigkeit:</strong> Arbeiten Sie ortsunabhängig ohne permanente Internetverbindung.</li>
+            <li><strong>Kosteneffizienz:</strong> Keine versteckten API-Gebühren oder teure Cloud-Abos nach der Einrichtung.</li>
         </ul>
     </div>
 
     <!-- Calendly Termin buchen -->
     <div class="box cta-box">
-        <h2>Gespräch vereinbaren</h2>
-        <p>Sind Sie Investor, Partner oder interessiert an unserem Projekt? Buchen Sie direkt einen Termin mit unserem Team!</p>
+        <h2>Bereit für die Zukunft der lokalen KI?</h2>
+        <p>Wir suchen strategische Partner, Investoren und zukunftsorientierte Unternehmen. Vereinbaren Sie direkt ein unverbindliches Gespräch mit unserem Projektteam.</p>
         <!-- Ersetze dein-calendly-link durch deinen echten Calendly-Link -->
-        <a href="https://calendly.com/dein-calendly-link" target="_blank" class="btn">📅 Buchen Sie einen Termin</a>
+        <a href="https://calendly.com/dein-calendly-link" target="_blank" class="btn">Termin buchen via Calendly</a>
     </div>
 
-    <!-- Footer -->
+    <!-- Footer mit Kontaktdaten -->
     <footer>
-        <p>&copy; 2026 Lokal AI Startup | Gehostet auf GitHub Pages</p>
+        <p><strong>Lokal AI Projektteam</strong></p>
+        <p>Telefon: +49 (0) 30 98765432</p>
+        <p>E-Mail: kontakt@lokal-ai.de</p>
+        <p style="margin-top: 15px; font-size: 0.8rem;">&copy; 2026 Lokal AI. Alle Rechte vorbehalten. Gehostet auf GitHub Pages.</p>
     </footer>
 
 </body>
