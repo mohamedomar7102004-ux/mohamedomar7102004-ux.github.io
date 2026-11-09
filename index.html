@@ -4,101 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lokal AI – Deine Künstliche Intelligenz offline</title>
-    <!-- Verknüpfung zum Design -->
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- CSS-Styling für das moderne Dark-Mode-Design -->
     <style>
         body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0d1117;
-    color: #c9d1d9;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-header {
-    background: linear-gradient(135deg, #1f6feb, #8957e5);
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-    border-bottom: 2px solid #30363d;
-}
+        header {
+            background: linear-gradient(135deg, #1f6feb, #8957e5);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 2px solid #30363d;
+        }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
 
-header p {
-    font-size: 1.1rem;
-    opacity: 0.9;
-}
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
 
-.card {
-    background-color: #161b22;
-    border: 1px solid #30363d;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-}
+        .card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
 
-.card h2 {
-    color: #58a6ff;
-    margin-top: 0;
-}
+        .card h2 {
+            color: #58a6ff;
+            margin-top: 0;
+        }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
-    color: #8b949e;
-    border-top: 1px solid #30363d;
-    margin-top: 40px;
-}
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #8b949e;
+            border-top: 1px solid #30363d;
+            margin-top: 40px;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Kopfbereich / Navigation -->
+    <!-- Header-Bereich -->
     <header>
         <div class="container">
             <h1>Lokal AI 🤖</h1>
-            <p>KI-Modelle sicher und datenschutzfreundlich auf dem eigenen PC ausführen.</p>
+            <p>KI-Modelle sicher, privat und offline auf dem eigenen PC ausführen.</p>
         </div>
     </header>
 
-    <!-- Hauptinhalt -->
+    <!-- Hauptinhalt der Website -->
     <main class="container">
+        
         <section class="card">
             <h2>Was ist Local AI?</h2>
-            <p>Unter <strong>Local AI</strong> versteht man das Betreiben von großen Sprachmodellen (LLMs) und KIs direkt auf der eigenen Hardware (GPU/CPU), anstatt Cloud-Dienste zu nutzen.</p>
+            <p>Unter <strong>Local AI</strong> versteht man das Betreiben von großen Sprachmodellen (LLMs) und Künstlicher Intelligenz direkt auf der eigenen Hardware (CPU/GPU) – ganz ohne Cloud-Zwang.</p>
         </section>
 
         <section class="card">
-            <h2>Vorteile</h2>
+            <h2>Vorteile von lokaler KI</h2>
             <ul>
-                🔒 <strong>Datenschutz:</strong> Deine Daten verlassen niemals deinen Computer.<br>
-                ⚡ <strong>Unabhängigkeit:</strong> Funktioniert komplett ohne Internetverbindung.<br>
-                💰 <strong>Keine Abo-Kosten:</strong> Einmal eingerichtet, läuft es dauerhaft kostenlos.
+                <li>🔒 <strong>Datenschutz:</strong> Deine Eingaben bleiben zu 100% privat auf deinem Computer.</li>
+                <li>⚡ <strong>Unabhängigkeit:</strong> Funktioniert auch ohne funktionierende Internetverbindung.</li>
+                <li>💰 <strong>Keine Abo-Kosten:</strong> Einmal eingerichtet, entstehen keine monatlichen API- oder Nutzungsgebühren.</li>
             </ul>
         </section>
 
         <section class="card">
-            <h2>Beliebte Tools</h2>
-            <p>Um KIs lokal zu starten, nutzt man oft Tools wie <em>Ollama</em>, <em>LM Studio</em> oder <em>AnythingLLM</em>.</p>
+            <h2>Beliebte Tools zum Starten</h2>
+            <p>Es gibt verschiedene Programme, mit denen du direkt eigene KI-Modelle ausführen kannst:</p>
+            <ul>
+                <li><strong>Ollama:</strong> Perfekt fürs Terminal oder als Schnittstelle.</li>
+                <li><strong>LM Studio:</strong> Einfache grafische Oberfläche zum Entdecken und Testen von Modellen.</li>
+                <li><strong>AnythingLLM:</strong> Eine Komplettlösung für Dokumenten-Chat und Agenten.</li>
+            </ul>
         </section>
+
     </main>
 
     <!-- Fußzeile -->
     <footer>
-        <p>&copy; 2026 Lokal AI Projekt. Erstellt mit GitHub Pages.</p>
+        <p>&copy; 2026 Lokal AI Projekt | Gehostet auf GitHub Pages</p>
     </footer>
 
 </body>
