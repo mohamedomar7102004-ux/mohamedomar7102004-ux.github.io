@@ -3,54 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lokal AI – Deine Künstliche Intelligenz offline</title>
+    <title>Lokal AI - Startup Landing Page</title>
     
-    <!-- CSS-Styling für das moderne Dark-Mode-Design -->
+    <!-- CSS (Design) direkt in der HTML-Datei -->
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0d1117;
-            color: #c9d1d9;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        .container {
+            font-family: Arial, sans-serif;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
         }
-
+        
         header {
-            background: linear-gradient(135deg, #1f6feb, #8957e5);
-            color: white;
             text-align: center;
-            padding: 40px 20px;
-            border-bottom: 2px solid #30363d;
+            padding: 20px 0;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
+        h1 {
+            color: #0066cc;
+            margin-bottom: 10px;
         }
 
-        header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-
-        .card {
-            background-color: #161b22;
-            border: 1px solid #30363d;
-            border-radius: 8px;
-            padding: 20px;
+        .box {
+            background: #ffffff;
+            padding: 25px;
             margin: 20px 0;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
-        .card h2 {
-            color: #58a6ff;
+        h2 {
+            color: #222;
             margin-top: 0;
         }
 
@@ -59,16 +45,53 @@
         }
 
         li {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Format */
+            height: 0;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .cta-box {
+            text-align: center;
+            background: #eef6ff;
+            border: 1px solid #b6d4fe;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #218838;
         }
 
         footer {
             text-align: center;
-            padding: 20px;
-            font-size: 0.9rem;
-            color: #8b949e;
-            border-top: 1px solid #30363d;
             margin-top: 40px;
+            color: #666;
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -76,44 +99,44 @@
 
     <!-- Header-Bereich -->
     <header>
-        <div class="container">
-            <h1>Lokal AI 🤖</h1>
-            <p>KI-Modelle sicher, privat und offline auf dem eigenen PC ausführen.</p>
-        </div>
+        <h1>Lokal AI 🚀</h1>
+        <p>Die smarte und datenschutzfreundliche KI-Lösung direkt auf deinem eigenen PC.</p>
     </header>
 
-    <!-- Hauptinhalt der Website -->
-    <main class="container">
+    <!-- Pitch Video Bereich -->
+    <div class="box">
+        <h2>Unser Pitch-Video</h2>
+        <p>Erfahre in unserem kurze Video, wie unsere Idee funktioniert:</p>
+        <div class="video-container">
+            <!-- Ersetze YOUR_VIDEO_ID durch deine echte YouTube-Video-ID -->
+            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Geschäftsidee -->
+    <div class="box">
+        <h2>Die Geschäftsidee</h2>
+        <p>Mit <strong>Lokal AI</strong> ermöglichen wir es Unternehmen und Privatpersonen, modernste Künstliche Intelligenz lokal auf der eigenen Hardware zu nutzen. Sensible Daten verlassen somit niemals deinen Computer.</p>
         
-        <section class="card">
-            <h2>Was ist Local AI?</h2>
-            <p>Unter <strong>Local AI</strong> versteht man das Betreiben von großen Sprachmodellen (LLMs) und Künstlicher Intelligenz direkt auf der eigenen Hardware (CPU/GPU) – ganz ohne Cloud-Zwang.</p>
-        </section>
+        <h3>Deine Vorteile:</h3>
+        <ul>
+            <li><strong>100% Datenschutz:</strong> Volle Kontrolle über deine Daten.</li>
+            <li><strong>Offline nutzbar:</strong> Keine Abhängigkeit von einer Internetverbindung.</li>
+            <li><strong>Keine Abo-Gebühren:</strong> Keine monatlichen Kosten für Cloud-Dienste.</li>
+        </ul>
+    </div>
 
-        <section class="card">
-            <h2>Vorteile von lokaler KI</h2>
-            <ul>
-                <li>🔒 <strong>Datenschutz:</strong> Deine Eingaben bleiben zu 100% privat auf deinem Computer.</li>
-                <li>⚡ <strong>Unabhängigkeit:</strong> Funktioniert auch ohne funktionierende Internetverbindung.</li>
-                <li>💰 <strong>Keine Abo-Kosten:</strong> Einmal eingerichtet, entstehen keine monatlichen API- oder Nutzungsgebühren.</li>
-            </ul>
-        </section>
+    <!-- Calendly Termin buchen -->
+    <div class="box cta-box">
+        <h2>Gespräch vereinbaren</h2>
+        <p>Sind Sie Investor, Partner oder interessiert an unserem Projekt? Buchen Sie direkt einen Termin mit unserem Team!</p>
+        <!-- Ersetze dein-calendly-link durch deinen echten Calendly-Link -->
+        <a href="https://calendly.com/dein-calendly-link" target="_blank" class="btn">📅 Buchen Sie einen Termin</a>
+    </div>
 
-        <section class="card">
-            <h2>Beliebte Tools zum Starten</h2>
-            <p>Es gibt verschiedene Programme, mit denen du direkt eigene KI-Modelle ausführen kannst:</p>
-            <ul>
-                <li><strong>Ollama:</strong> Perfekt fürs Terminal oder als Schnittstelle.</li>
-                <li><strong>LM Studio:</strong> Einfache grafische Oberfläche zum Entdecken und Testen von Modellen.</li>
-                <li><strong>AnythingLLM:</strong> Eine Komplettlösung für Dokumenten-Chat und Agenten.</li>
-            </ul>
-        </section>
-
-    </main>
-
-    <!-- Fußzeile -->
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Lokal AI Projekt | Gehostet auf GitHub Pages</p>
+        <p>&copy; 2026 Lokal AI Startup | Gehostet auf GitHub Pages</p>
     </footer>
 
 </body>
